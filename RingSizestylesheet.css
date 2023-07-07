@@ -1,0 +1,46 @@
+* {
+  /*all of website page*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: url("pearl11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: white;
+  height: 550px;
+  width: 550px;
+  /* You must set a specified height */
+  /* Do not repeat the image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #E2DFD2);
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  /*for shadow in the screen*/
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  font-style: italic;
+  color: #2f2f2e;
+  text-shadow: 3px 3px #E2DFD2;
+}

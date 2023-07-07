@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="pearl.png">
+
+  <link rel="stylesheet" href="signup.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--THE CREATION OF THE REGISTER WINDOW-->
+  <div class="container">
+    <div class="title"><strong>Registration</strong></div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="First name " required>
+
+          </div>
+          <div class="input-box">
+            <span class="details">Last name</span>
+            <input type="text" placeholder=" Last name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="name@domain.com" />
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="tel" placeholder="+996 5******" required pattern="[9665]{4}[0-9]{8}" />
+            <small></small>
+          </div>
+
+          <div class="input-box">
+            <span class="details">password</span>
+            <input type="password" placeholder="*********" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">DOB</span>
+            <!--HAVE A LENGTH THE MINIMUM OF 1920 AND THE MAXIMUM OF 2007 ONLY PEOPLE WHO ABOVE 16+ CAN REGISTER-->
+            <input type="date" class="details" required min="1920-01-01" max="2007-12-31">
+          </div>
+        </div>
+
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <p><label>Language:
+              <select name="choose" class="info">
+                <option>Arabic </option>
+                <option selected>English</option>
+                <option>French</option>
+              </select></label></p>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <div class="button">
+          <a href="index.html"><input type="button" value="Home"></a>
+        </div>
+        <h6>Copyright &copy; PileOfPearls</h6>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
